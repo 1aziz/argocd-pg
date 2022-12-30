@@ -1,0 +1,15 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata:
+  name: projectA
+  namespace: argocd
+  finalizers:
+    - resources-finalizer.argocd.argoproj.io
+spec:
+  description: Project A
+  sourceRepos:
+  - '*'
+  destinations:
+  - namespace: default
+    server: https://kubernetes.default.svc
