@@ -13,6 +13,4 @@ argo-cd:
           name: argo-cd
           url: https://argoproj.github.io/argo-helm
     extraArgs:
-      - --basehref
-      - /argo-cd/
       - --insecure
