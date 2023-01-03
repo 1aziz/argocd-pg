@@ -9,7 +9,7 @@ spec:
   destination:
     namespace: argocd
     server: https://kubernetes.default.svc
-  project: default
+  project: project-a
   source:
     path: one
     repoURL: https://github.com/1aziz/argocd-pg/
